@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'sinatra'
+gem 'sinatra-cross_origin'
+gem 'sinatra-partial'
+gem 'json'
+gem 'data_mapper'
+gem 'dm-mysql-adapter'
+gem 'rest-client'
+gem 'thin'

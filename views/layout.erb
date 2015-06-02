@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sinatra + Twitter Bootstrap</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/vendor/bootstrap/css/jumbotron-narrow.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+          </ul>
+        </nav>
+        <h3 class="text-muted">ImgDetect</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Image Classifier</h1>
+        <p class="lead">Demo of <a href="http://deepdetect.com">DeepDetect</a> server with an image classification service based on a deep neural network pre-trained on a subset of Imagenet (ILSVRC12). The classification service will distinguish among 1000 different image tags, from ‘ambulance’ to ‘paddlock’ and more!</p>
+        <p>
+          <label for="url">Image URL : </label> <input type="text" id="url"/><br>
+          <a class="btn btn-lg btn-success" href="#" role="button">Classify</a>
+        </p>
+      </div>
+
+			<%= yield %>
+
+      <footer class="footer">
+        <p>Powered with <a href="http://deepdetect.com">DeepDetect</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+	</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/vendor/jquery-1.9.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
