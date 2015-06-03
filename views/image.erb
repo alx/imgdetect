@@ -3,9 +3,7 @@
     <img src="<%= image.url %>" class="img-responsive">
   </div>
   <div class="col-lg-8">
-    <ul>
-    <%= partial(:prediction, :collection => image.predictions) %>
-    </ul>
+  <%= partial(:prediction, :collection => image.predictions) %>
   </div>
 </div>
 <hr>

@@ -1,1 +1,24 @@
-<li><a href="#"><%= prediction.category.name %></a> - <%= '%.1f' % (prediction.prob * 100) %>%</li>
+<%
+    percent = (prediction.prob * 100).to_i
+    style = 'success'
+
+    if(percent < 60)
+      style = 'warning'
+    end
+
+    if(percent < 25)
+      style = 'danger'
+    end
+%>
+<div class="row">
+  <div class="col-lg-4">
+    <div class="progress">
+      <div class="progress-bar progress-bar-<%= style %>" role="progressbar" aria-valuenow="<%= percent %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= percent %>%;">
+        <%= percent %>%
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-8">
+    <a href="#"><%= prediction.category.name %></a>
+  </div>
+</div>
