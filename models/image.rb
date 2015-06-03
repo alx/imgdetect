@@ -64,5 +64,10 @@ class Image
       end
 
     end
+
+    if self.predictions.size == 0
+      throw :halt
+    end
+
   end
 end
