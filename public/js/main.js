@@ -22,7 +22,7 @@ $(document).ready(function() {
           style = 'danger';
         }
 
-        var predictionHtml = '<div class="row"><div class="col-lg-4"><div class="progress">';'
+        var predictionHtml = '<div class="row"><div class="col-lg-4"><div class="progress">';
         predictionHtml += '<div class="progress-bar progress-bar-' + style + '" role="progressbar" ';
         predictionHtml += 'aria-valuenow="' + percent + '" aria-valuemin="0" aria-valuemax="100" ';
         predictionHtml += 'style="width: ' + percent + '%;">' + percent + '%</div></div></div>';
