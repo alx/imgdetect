@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sinatra + Twitter Bootstrap</title>
+		<title>ImgDetect - DeepDetect Image Classifier</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
         <p class="lead">Demo of <a href="http://deepdetect.com">DeepDetect</a> server with an image classification service based on a deep neural network pre-trained on a subset of Imagenet (ILSVRC12). The classification service will distinguish among 1000 different image tags, from ‘ambulance’ to ‘paddlock’ and more!</p>
         <p>
           <label for="url">Image URL : </label> <input type="text" id="url"/><br>
-          <a class="btn btn-lg btn-success" href="#" role="button">Classify</a>
+          <a id="urlSubmit" class="btn btn-lg btn-success" href="#" role="button">Classify <img src="/images/loading.gif" class="loading hidden"></a>
         </p>
       </div>
 

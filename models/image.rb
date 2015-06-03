@@ -11,6 +11,14 @@ class Image
 
   before :save, :predict
 
+  def to_json
+    json = {:url => self.url, :predictions => []}
+    self.predictions.each do |prediction|
+      json[:predictions] << {prob: prediction.prob, name: prediction.category.name}
+    end
+    json.to_json
+  end
+
   def predict
 
     predict_url =   "http://#{Sinatra::Application.settings.dd_host}"
