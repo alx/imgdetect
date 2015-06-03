@@ -18,6 +18,8 @@ $(document).ready(function() {
       $('#imageList').prepend('<hr>');
       $('#imageList').prepend($('#emptyImage').clone().attr('id', '').removeClass('hidden'));
       $('.loading').addClass('hidden');
+
+      $('input#url').val('');
     });
 
   });
