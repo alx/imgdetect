@@ -14,7 +14,11 @@ class Image
   def to_json
     json = {:url => self.url, :predictions => []}
     self.predictions.each do |prediction|
-      json[:predictions] << {prob: prediction.prob, name: prediction.category.name}
+      json[:predictions] << {
+        prob: prediction.prob,
+        name: prediction.category.name,
+        nid:  prediction.category.nid
+      }
     end
     json.to_json
   end

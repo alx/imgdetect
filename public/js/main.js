@@ -26,7 +26,7 @@ $(document).ready(function() {
         predictionHtml += '<div class="progress-bar progress-bar-' + style + '" role="progressbar" ';
         predictionHtml += 'aria-valuenow="' + percent + '" aria-valuemin="0" aria-valuemax="100" ';
         predictionHtml += 'style="width: ' + percent + '%;">' + percent + '%</div></div></div>';
-        predictionHtml += '<div class="col-lg-8"><a href="#">' + this.name + '</a></div></div>';
+        predictionHtml += '<div class="col-lg-8"><a target="_blank" href="http://www.image-net.org/synset?wnid=' + this.nid + '">' + this.name + '</a></div></div>';
         $('#emptyImage .predictions').append(predictionHtml);
       });
 
